@@ -1,4 +1,4 @@
-// whenever hooks get hit (like github) it creates the transaction puts in the zapRun database and also in zapRunOutbox databse (second table in db)
+// whenever hooks get hit (like github) it creates the transaction, puts data in the zapRun database and also in zapRunOutbox databse (second table in db)
 
 import express from "express";
 import { PrismaClient } from "@prisma/client";

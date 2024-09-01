@@ -7,8 +7,10 @@ import { actionRouter } from "./router/action";
 
 const app = express();
 app.use(express.json());
-app.use(cors())
-
+app.use(cors());
+app.get("/", (req, res) => {
+  res.send("Primary backend is running");
+});
 app.use("/api/v1/user", userRouter);
 
 app.use("/api/v1/zap", zapRouter);
