@@ -77,3 +77,12 @@ model ZapRunOutbox {
   zapRunId    String @unique
   zapRun      ZapRun @relation(fields: [zapRunId], references: [id])
 }
+
+model SolanaTransaction {
+  id            String   @id @default(cuid()) 
+  walletAddress String   
+  signature     String   
+  amount        Float    
+  createdAt     DateTime @default(now()) 
+  notified      Boolean  @default(false) 
+}
