@@ -10,7 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@prisma/client": "^5.17.0",
     "@solana/web3.js": "^1.95.1",
     "@types/bs58": "^4.0.4",
     "@types/nodemailer": "^6.4.15",
@@ -20,6 +19,9 @@
     "nodemailer": "^6.9.14"
   },
   "devDependencies": {
-    "prisma": "^5.17.0"
+    "@prisma/client": "^5.19.1",
+    "i": "^0.3.7",
+    "npm": "^10.8.3",
+    "prisma": "^5.19.1"
   }
 }
